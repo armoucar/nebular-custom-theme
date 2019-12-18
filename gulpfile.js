@@ -21,7 +21,7 @@ gulp.task(
     'copy:themes',
 
     () =>
-        gulp.src(['./src/styles/custom-theme/**/*'], { base: './src/styles' })
+        gulp.src(['./src/styles/**/*'], { base: './src/styles' })
             .pipe(gulp.dest('./dist/themes')),
 );
 
