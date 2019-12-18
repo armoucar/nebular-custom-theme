@@ -5,7 +5,6 @@
 @import './theme'; // Nebular variable overrides
 @import './overrides'; // CSS Selectors overrides
 
-
 $nb-enabled-themes: (customTheme);
 
 @include nb-install() {
