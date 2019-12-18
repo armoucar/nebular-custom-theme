@@ -12,13 +12,11 @@ const sassSrc = `./src/styles/**/*.scss`;
 gulp.task(
     'clean',
 
-    () =>
-        gulp.src('dist/*')
-            .pipe(clean()),
+    () => gulp.src('dist/*').pipe(clean()),
 );
 
 gulp.task(
-    'copy:themes',
+    'copy',
 
     () =>
         gulp.src(['./src/styles/**/*'], { base: './src/styles' })
@@ -36,7 +34,7 @@ gulp.task(
 );
 
 gulp.task(
-    'sass:themes',
+    'sass',
 
     () =>
         gulp.src([sassSrc])
@@ -44,8 +42,5 @@ gulp.task(
             .pipe(gulp.dest(`./dist/styles`))
 );
 
-gulp.task(
-    'sass:themes:watch',
-
-    () => gulp.watch(sassSrc, gulp.series(['clean', 'sass:themes', 'minify', 'copy:themes']))
-);
+gulp.task('sass:themes', gulp.series(['clean', 'sass', 'minify', 'copy']));
+gulp.task('sass:themes:watch', () => gulp.watch(sassSrc, gulp.series(['sass:themes'])));
