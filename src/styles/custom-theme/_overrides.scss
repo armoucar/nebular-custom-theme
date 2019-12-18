@@ -1,0 +1,11 @@
+@mixin nb-custom-theme-overrides() {
+
+    .form-group {
+        &:focus-within {
+            .label {
+                color: nb-theme(color-primary-500);
+            }
+        }
+    }
+
+}

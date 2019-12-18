@@ -1,0 +1,10 @@
+@import '~@nebular/theme/styles/core/functions';
+@import '~@nebular/theme/styles/core/mixins';
+
+$font-fix: 500;
+
+$theme: (
+    color-primary-500: magenta,
+);
+
+$nb-themes: nb-register-theme($theme, customTheme, default);

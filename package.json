@@ -1,0 +1,28 @@
+{
+    "name": "nebular-custom-theme",
+    "version": "1.0.0",
+    "description": "Custom Nebular themes focused project",
+    "scripts": {
+        "sass:themes": "gulp sass:themes",
+        "sass:themes:watch": "gulp sass:themes:watch"
+    },
+    "keywords": [
+        "angular",
+        "nebular",
+        "sass"
+    ],
+    "author": "Arthur Moura Carvalho",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@angular/cdk": "^8.2.3",
+        "@nebular/theme": "^4.6.0",
+        "gulp": "^4.0.2",
+        "gulp-clean": "^0.4.0",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-watch": "^5.0.1",
+        "node-sass-tilde-importer": "^1.0.2"
+    }
+}
