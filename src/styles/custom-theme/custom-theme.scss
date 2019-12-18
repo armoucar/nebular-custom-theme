@@ -1,10 +1,10 @@
+@import '~@nebular/theme/styles/globals';
 @import '~@nebular/theme/styles/theming';
 @import '~@nebular/theme/styles/themes/default';
 
 @import './theme'; // Nebular variable overrides
 @import './overrides'; // CSS Selectors overrides
 
-@import '~@nebular/theme/styles/globals';
 
 $nb-enabled-themes: (customTheme);
 
