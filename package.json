@@ -13,9 +13,11 @@
     ],
     "author": "Arthur Moura Carvalho",
     "license": "MIT",
-    "dependencies": {},
+    "dependencies": {
+        "@angular/cdk": "^11.0.2",
+        "@nebular/theme": "^6.2.1"
+    },
     "devDependencies": {
-        "@nebular/theme": "^4.6.0",
         "gulp": "^4.0.2",
         "gulp-clean": "^0.4.0",
         "gulp-clean-css": "^4.3.0",
